@@ -1,0 +1,17 @@
+{
+    "name": "Java 11 Dev Container",
+    "dockerFile": "Dockerfile",
+
+    // Default dev container specific settings.json values.
+    "settings": {
+    },
+
+    // VSCode extensions to install when creating container.
+	"extensions": [
+        "vscjava.vscode-java-pack"
+    ],
+
+	// Uncomment to run as a particular user instead of root.
+    // NOTE: If editing username, remember to make matching edit to USERNAME ARG in Dockerfile
+ 	"remoteUser": "dtrifuno"
+}
