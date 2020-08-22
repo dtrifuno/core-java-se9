@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Ex6Test {
+public class Ex06Test {
 
   private static Stream<Arguments> providesArgsForMax() {
     return Stream.of(
@@ -25,7 +25,7 @@ public class Ex6Test {
   @ParameterizedTest
   @MethodSource("providesArgsForMax")
   void testFactorial(int n, BigInteger expectedFactorial) {
-    BigInteger factorial = Ex6.factorial(n);
+    BigInteger factorial = Ex06.factorial(n);
     assertTrue(factorial.equals(expectedFactorial),
         String.format("%d! should be %s, but got %s instead.", n, expectedFactorial, factorial));
   }

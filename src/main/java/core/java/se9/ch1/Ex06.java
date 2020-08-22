@@ -2,7 +2,7 @@ package core.java.se9.ch1;
 
 import java.math.BigInteger;
 
-public class Ex6 {
+public class Ex06 {
   public static BigInteger factorial(int n) {
     BigInteger result = BigInteger.ONE;
     for (int i = 2; i <= n; i++) {

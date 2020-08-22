@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Ex1Test {
+public class Ex01Test {
 
   private static Stream<Arguments> providesIntsToConvert() {
     return Stream.of(Arguments.of(0, "0", "0", "0"), Arguments.of(11, "1011", "13", "b"),
@@ -18,8 +18,8 @@ public class Ex1Test {
 
   @ParameterizedTest
   @MethodSource("providesIntsToConvert")
-  void testEx1(int n, String expectedBinary, String expectedOctal, String expectedHexadecimal) {
-    String result = Ex1.createResultString(n);
+  void testEx01(int n, String expectedBinary, String expectedOctal, String expectedHexadecimal) {
+    String result = Ex01.createResultString(n);
     assertTrue(result.contains(String.format("bin: %s", expectedBinary)),
         "Failed to find expected binary string for n=" + n + "\n");
     assertTrue(result.contains(String.format("oct: %s", expectedOctal)),

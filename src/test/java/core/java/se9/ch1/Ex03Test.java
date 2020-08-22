@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Ex3Test {
+public class Ex03Test {
 
   private static Stream<Arguments> providesArgsForMax() {
     return Stream.of(
@@ -24,13 +24,13 @@ public class Ex3Test {
   @ParameterizedTest
   @MethodSource("providesArgsForMax")
   void testMax(int expectedMax, int a, int b, int c) {
-    assertEquals(expectedMax, Ex3.max(a, b, c));
+    assertEquals(expectedMax, Ex03.max(a, b, c));
   }
 
   @ParameterizedTest
   @MethodSource("providesArgsForMax")
   void testMaxWithMath(int expectedMax, int a, int b, int c) {
-    assertEquals(expectedMax, Ex3.maxWithMath(a, b, c));
+    assertEquals(expectedMax, Ex03.maxWithMath(a, b, c));
   }
 
 }

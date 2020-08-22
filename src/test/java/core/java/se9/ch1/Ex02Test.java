@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Ex2Test {
+public class Ex02Test {
 
   private static Stream<Arguments> providesAnglesForNormalize() {
     return Stream.of(
@@ -24,13 +24,13 @@ public class Ex2Test {
   @ParameterizedTest
   @MethodSource("providesAnglesForNormalize")
   void testNormalize(int expectedNormalizedAngle, int inputAngle) {
-    assertEquals(expectedNormalizedAngle, Ex2.normalizeAngle(inputAngle));
+    assertEquals(expectedNormalizedAngle, Ex02.normalizeAngle(inputAngle));
   }
 
   @ParameterizedTest
   @MethodSource("providesAnglesForNormalize")
   void testNormalizeFloorMod(int expectedNormalizedAngle, int inputAngle) {
-    assertEquals(expectedNormalizedAngle, Ex2.normalizeAngleFloorMod(inputAngle));
+    assertEquals(expectedNormalizedAngle, Ex02.normalizeAngleFloorMod(inputAngle));
   }
 
 }
