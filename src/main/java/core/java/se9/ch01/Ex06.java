@@ -1,4 +1,4 @@
-package core.java.se9.ch1;
+package core.java.se9.ch01;
 
 import java.math.BigInteger;
 

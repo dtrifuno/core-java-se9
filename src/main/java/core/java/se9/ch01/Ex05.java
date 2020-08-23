@@ -1,4 +1,4 @@
-package core.java.se9.ch1;
+package core.java.se9.ch01;
 
 public class Ex05 {
   public static void main(String[] args) {

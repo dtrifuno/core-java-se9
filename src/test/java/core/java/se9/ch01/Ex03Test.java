@@ -1,10 +1,12 @@
-package core.java.se9.ch1;
+package core.java.se9.ch01;
 
 import java.util.stream.Stream;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import core.java.se9.ch01.Ex03;
 
 import static org.junit.jupiter.api.Assertions.*;
 

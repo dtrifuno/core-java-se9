@@ -1,6 +1,9 @@
-package core.java.se9.ch1;
+package core.java.se9.ch01;
 
 import org.junit.jupiter.api.Test;
+
+import core.java.se9.ch01.Ex16;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Ex16Test {
