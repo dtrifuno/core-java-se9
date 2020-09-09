@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Ex18 {
+  @SuppressWarnings("unused")
   public static void main(String[] args) {
     // EMPTY_LIST, EMPTY_MAP, and EMPTY_SET are of type List, Map and Set
     // and must undergo a type conversion before using with variables of
