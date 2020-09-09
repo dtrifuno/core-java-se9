@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Ex11Test {
   @Test
-  void testEx11() {
+  void testStringsOfMaxLengthWithManyStrings() {
     var actual = Ex11.stringsOfMaxLength(
       Stream.of(
         "carbon",
@@ -23,5 +23,11 @@ public class Ex11Test {
     );
     var expected = Set.of("hospital", "dressing");
     assertEquals(actual, expected);
+  }
+
+  @Test
+  void testStringsOfMaxLengthWithNoStrings() {
+    var actual = Ex11.stringsOfMaxLength(Stream.empty());
+    assertEquals(Set.of(), actual);
   }
 }

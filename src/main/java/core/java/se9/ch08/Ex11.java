@@ -13,6 +13,10 @@ public class Ex11 {
       TreeMap::new,
       toSet()
     ));
+
+    if (groupedByLength.isEmpty()) {
+      return Set.of();
+    }
     return groupedByLength.lastEntry().getValue();
   }
 
