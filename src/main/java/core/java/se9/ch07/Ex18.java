@@ -8,14 +8,14 @@ import java.util.Set;
 public class Ex18 {
   public static void main(String[] args) {
     // EMPTY_LIST, EMPTY_MAP, and EMPTY_SET are of type List, Map and Set
-    // and need to be typecast before using with as variable of
+    // and must undergo a type conversion before using with variables of
     // type List<T> for some T
     @SuppressWarnings("unchecked")
-    List<String> listOfStrings = (List<String>) Collections.EMPTY_LIST;
+    List<String> listOfStrings = Collections.EMPTY_LIST;
     @SuppressWarnings("unchecked")
-    Map<String, Long> mapStringsToLength = (Map<String, Long>) Collections.EMPTY_LIST;
+    Map<String, Long> mapStringsToLength = Collections.EMPTY_MAP;
     @SuppressWarnings("unchecked")
-    Set<String> setOfStrings = (Set<String>) Collections.EMPTY_LIST;
+    Set<String> setOfStrings = Collections.EMPTY_SET;
     
     // however, emptyList, emptyMap and emptySet are generic methods
     // and can infer the type
