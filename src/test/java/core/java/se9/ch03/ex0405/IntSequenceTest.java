@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import core.java.se9.ch03.ex0405.IntSequence;
-
 public class IntSequenceTest {
 
   @Test
