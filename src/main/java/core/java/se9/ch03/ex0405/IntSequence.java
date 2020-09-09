@@ -1,4 +1,4 @@
-package core.java.se9.ch03.Ex0405;
+package core.java.se9.ch03.ex0405;
 
 import java.util.function.IntSupplier;
 

@@ -1,8 +1,10 @@
-package core.java.se9.ch03.Ex0405;
+package core.java.se9.ch03.ex0405;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import core.java.se9.ch03.ex0405.IntSequence;
 
 public class IntSequenceTest {
 
