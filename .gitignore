@@ -1,19 +1,9 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/java,gradle
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,gradle
-
 ### Java ###
 # Compiled class file
 *.class
 
 # Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
 # Package Files #
 *.jar
@@ -30,7 +20,7 @@ hs_err_pid*
 ### Gradle ###
 .gradle
 build/
-
+bin/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -41,14 +31,8 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-
 ### Gradle Patch ###
 **/build/
 
-# End of https://www.toptal.com/developers/gitignore/api/java,gradle
-
-# Ignore Gradle build output directory
-build
-bin/
+### Resources ###
+war_and_peace.txt
