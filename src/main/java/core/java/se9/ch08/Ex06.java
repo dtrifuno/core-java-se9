@@ -8,7 +8,7 @@ public class Ex06 {
 
     return (token
     .codePoints()
-    .reduce(1, (acc, element) -> Character.isAlphabetic(element) ? 1 * acc : 0)
+    .reduce(1, (flag, element) -> Character.isAlphabetic(element) ? flag : 0)
     == 1);
   }
 
@@ -17,19 +17,13 @@ public class Ex06 {
       return false;
     }
 
-    if (Character.isDigit(token.codePointAt(0))) {
+    if (!Character.isJavaIdentifierStart(token.codePointAt(0))) {
       return false;
     }
 
     return (token
     .codePoints()
-    .reduce(1, (acc, element) -> {
-      if (Character.isAlphabetic(element) || Character.isDigit(element) || element == '$' || element == '_') {
-        return 1 * acc;
-      } else {
-        return 0;
-      }
-    })
+    .reduce(1, (flag, element) -> Character.isJavaIdentifierPart(element) ? flag : 0)
     == 1);
   }
 }

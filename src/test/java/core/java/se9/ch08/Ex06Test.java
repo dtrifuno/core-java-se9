@@ -65,12 +65,12 @@ public class Ex06Test {
   @ParameterizedTest
   @MethodSource("providesValidIdentifiers")
   void testValidIdentifiers(String validIdentifier){
-    assertTrue(Ex06.isJavaIdentifier(validIdentifier));
+    assertTrue(Ex06.isJavaIdentifier(validIdentifier), validIdentifier);
   }
 
   @ParameterizedTest
   @MethodSource("providesInvalidIdentifiers")
   void testInvalidIdentifiers(String invalidIdentifier){
-    assertFalse(Ex06.isJavaIdentifier(invalidIdentifier));
+    assertFalse(Ex06.isJavaIdentifier(invalidIdentifier), invalidIdentifier);
   }
 }
