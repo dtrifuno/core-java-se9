@@ -1,0 +1,3 @@
+The method nextInt of the Scanner class is a mutator method, since the object stores its position in the input and advances past the next integer when receiving the nextInt call.
+
+The method nextInt of the Random class is also a mutator method, since it modifies the seed value stored in the Random object.
