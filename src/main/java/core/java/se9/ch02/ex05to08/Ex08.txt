@@ -1,0 +1,1 @@
+Not a lot of boilerplate generation for Java in VS Code, the main one is the ability to autogenerate a given setter/getter using IntelliSense.
