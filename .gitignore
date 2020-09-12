@@ -35,5 +35,4 @@ gradle-app.setting
 **/build/
 
 ### Resources ###
-war_and_peace.txt
-the_cloak.txt
+src/main/resources/*.txt
