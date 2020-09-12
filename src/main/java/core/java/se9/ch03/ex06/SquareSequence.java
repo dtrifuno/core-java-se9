@@ -15,5 +15,4 @@ public class SquareSequence implements Sequence<BigInteger> {
     i = i.add(BigInteger.ONE);
     return i.multiply(i);
   }
-  
 }

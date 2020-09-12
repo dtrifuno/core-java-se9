@@ -7,9 +7,9 @@ public class Ex06 {
     }
 
     return (token
-    .codePoints()
-    .reduce(1, (flag, element) -> Character.isAlphabetic(element) ? flag : 0)
-    == 1);
+            .codePoints()
+            .reduce(1, (flag, element) -> Character.isAlphabetic(element) ? flag : 0)
+        == 1);
   }
 
   public static boolean isJavaIdentifier(String token) {
@@ -22,8 +22,8 @@ public class Ex06 {
     }
 
     return (token
-    .codePoints()
-    .reduce(1, (flag, element) -> Character.isJavaIdentifierPart(element) ? flag : 0)
-    == 1);
+            .codePoints()
+            .reduce(1, (flag, element) -> Character.isJavaIdentifierPart(element) ? flag : 0)
+        == 1);
   }
 }

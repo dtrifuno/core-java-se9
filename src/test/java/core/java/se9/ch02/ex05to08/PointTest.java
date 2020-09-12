@@ -1,8 +1,8 @@
 package core.java.se9.ch02.ex05to08;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
 
 public class PointTest {
   @Test

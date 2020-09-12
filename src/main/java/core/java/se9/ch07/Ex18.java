@@ -17,7 +17,7 @@ public class Ex18 {
     Map<String, Long> mapStringsToLength = Collections.EMPTY_MAP;
     @SuppressWarnings("unchecked")
     Set<String> setOfStrings = Collections.EMPTY_SET;
-    
+
     // however, emptyList, emptyMap and emptySet are generic methods
     // and can infer the type
     List<Double> listOfDoubles = Collections.emptyList();

@@ -1,7 +1,8 @@
 package core.java.se9.ch04.ex01to03;
 
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
 
 public class EqualsTest {
   private final Point pointA = new Point(2.5, 3.5);
@@ -36,7 +37,7 @@ public class EqualsTest {
   void testAPointIsNotEqualToALabeledPoint() {
     assertNotEquals(pointA, labeledPointA);
   }
-  
+
   @Test
   void testLabeledPointsAreEqualIfTheyAgreeOnAllData() {
     assertEquals(new LabeledPoint("A", 4, 5), new LabeledPoint("A", 4, 5));

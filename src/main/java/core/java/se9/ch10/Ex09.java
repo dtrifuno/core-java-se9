@@ -10,16 +10,17 @@ public class Ex09 {
   private static final int NUMBER_OF_TASKS = 1000;
 
   public static void main(String[] args) {
-    
+
     ExecutorService exec = Executors.newFixedThreadPool(4);
     CountDownLatch longAdderLatch = new CountDownLatch(NUMBER_OF_TASKS);
     LongAdder la = new LongAdder();
-    Runnable incrementLongAdder = () -> { 
-      for (int i = 0; i < 100000; i++) {
-        la.increment();
-        longAdderLatch.countDown();
-      }
-    };
+    Runnable incrementLongAdder =
+        () -> {
+          for (int i = 0; i < 100000; i++) {
+            la.increment();
+            longAdderLatch.countDown();
+          }
+        };
 
     long longAdderStartTime = System.nanoTime();
     for (int i = 0; i < NUMBER_OF_TASKS; i++) {
@@ -33,15 +34,15 @@ public class Ex09 {
     }
     long longAdderEndTime = System.nanoTime();
 
-
     CountDownLatch atomicLongLatch = new CountDownLatch(NUMBER_OF_TASKS);
     AtomicLong al = new AtomicLong();
-    Runnable incrementAtomicLong = () -> { 
-      for (int i = 0; i < 100000; i++) {
-        al.incrementAndGet();
-        atomicLongLatch.countDown();
-      }
-    };
+    Runnable incrementAtomicLong =
+        () -> {
+          for (int i = 0; i < 100000; i++) {
+            al.incrementAndGet();
+            atomicLongLatch.countDown();
+          }
+        };
 
     long atomicLongStartTime = System.nanoTime();
     for (int i = 0; i < NUMBER_OF_TASKS; i++) {

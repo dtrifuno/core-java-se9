@@ -1,14 +1,11 @@
 package core.java.se9.ch08;
 
+import com.google.common.io.Resources;
 import java.io.IOException;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
-
-import com.google.common.io.Resources;
-
 
 public class Ex01 {
   public static void main(String[] args) {
@@ -23,14 +20,15 @@ public class Ex01 {
 
     Stream<String> words = Stream.of(warAndPeace.split("\\PL+"));
     words
-    .filter(word -> {
-      if (word.length() > 12) {
-        System.out.println("Found a match: " + word);
-        return true;
-      } 
-      return false;
-    }
-    )
-    .limit(5).toArray();
+        .filter(
+            word -> {
+              if (word.length() > 12) {
+                System.out.println("Found a match: " + word);
+                return true;
+              }
+              return false;
+            })
+        .limit(5)
+        .toArray();
   }
 }

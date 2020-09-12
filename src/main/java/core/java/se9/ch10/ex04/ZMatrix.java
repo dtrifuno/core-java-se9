@@ -15,7 +15,8 @@ public class ZMatrix {
     this.lowerRight = BigInteger.valueOf(lowerRight);
   }
 
-  ZMatrix(BigInteger upperLeft, BigInteger upperRight, BigInteger lowerLeft, BigInteger lowerRight) {
+  ZMatrix(
+      BigInteger upperLeft, BigInteger upperRight, BigInteger lowerLeft, BigInteger lowerRight) {
     this.upperLeft = upperLeft;
     this.upperRight = upperRight;
     this.lowerLeft = lowerLeft;
@@ -40,11 +41,10 @@ public class ZMatrix {
 
   public ZMatrix multiply(ZMatrix other) {
     return new ZMatrix(
-      upperLeft.multiply(other.upperLeft).add(upperRight.multiply(other.lowerLeft)),
-      upperLeft.multiply(other.upperRight).add(upperRight.multiply(other.lowerRight)),
-      lowerLeft.multiply(other.upperLeft).add(lowerRight.multiply(other.lowerLeft)),
-      lowerLeft.multiply(other.upperRight).add(lowerRight.multiply(other.lowerRight))
-    );
+        upperLeft.multiply(other.upperLeft).add(upperRight.multiply(other.lowerLeft)),
+        upperLeft.multiply(other.upperRight).add(upperRight.multiply(other.lowerRight)),
+        lowerLeft.multiply(other.upperLeft).add(lowerRight.multiply(other.lowerLeft)),
+        lowerLeft.multiply(other.upperRight).add(lowerRight.multiply(other.lowerRight)));
   }
 
   @Override
@@ -56,11 +56,9 @@ public class ZMatrix {
       return false;
     }
     ZMatrix other = (ZMatrix) obj;
-    return (
-      getUpperLeft().equals(other.getUpperLeft()) &&
-      getUpperRight().equals(other.getUpperRight()) &&
-      getLowerLeft().equals(other.getLowerLeft()) &&
-      getLowerRight().equals(other.getLowerRight())
-    );
+    return (getUpperLeft().equals(other.getUpperLeft())
+        && getUpperRight().equals(other.getUpperRight())
+        && getLowerLeft().equals(other.getLowerLeft())
+        && getLowerRight().equals(other.getLowerRight()));
   }
 }

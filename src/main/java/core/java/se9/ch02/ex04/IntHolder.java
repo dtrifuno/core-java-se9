@@ -5,8 +5,7 @@ package core.java.se9.ch02.ex04;
 public class IntHolder {
   public int value = 0;
 
-  IntHolder() {
-  }
+  IntHolder() {}
 
   IntHolder(int value) {
     this.value = value;

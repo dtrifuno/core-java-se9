@@ -15,7 +15,8 @@ public class ToStringTest {
 
   @Test
   void testLabeledPointToString() {
-    assertEquals("core.java.se9.ch04.ex01to03.LabeledPoint[x=2.500000,y=3.500000][label=\"A\"]", labeledPoint.toString());
+    assertEquals(
+        "core.java.se9.ch04.ex01to03.LabeledPoint[x=2.500000,y=3.500000][label=\"A\"]",
+        labeledPoint.toString());
   }
-  
 }

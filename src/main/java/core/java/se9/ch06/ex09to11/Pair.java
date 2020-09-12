@@ -30,11 +30,14 @@ public class Pair<E> {
     }
     @SuppressWarnings("unchecked")
     Pair<E> otherPair = (Pair<E>) obj;
-    return this.getFirst().equals(otherPair.getFirst()) && this.getSecond().equals(otherPair.getSecond());
+    return this.getFirst().equals(otherPair.getFirst())
+        && this.getSecond().equals(otherPair.getSecond());
   }
 
   @Override
   public String toString() {
-    return String.format("Pair<%s>[first=%s, second=%s]", this.first.getClass().getName(), this.first.toString(), this.second.toString());
+    return String.format(
+        "Pair<%s>[first=%s, second=%s]",
+        this.first.getClass().getName(), this.first.toString(), this.second.toString());
   }
 }

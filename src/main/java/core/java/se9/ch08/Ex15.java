@@ -14,10 +14,11 @@ public class Ex15 {
       }
     }
 
-    Pair p = stream.reduce(
-      new Pair(0.0, 0),
-      (Pair pr, Double val) -> new Pair(pr.sum + val, pr.count + 1),
-      (Pair a, Pair b) -> new Pair(a.sum + b.sum, a.count + b.count));
+    Pair p =
+        stream.reduce(
+            new Pair(0.0, 0),
+            (Pair pr, Double val) -> new Pair(pr.sum + val, pr.count + 1),
+            (Pair a, Pair b) -> new Pair(a.sum + b.sum, a.count + b.count));
     if (p.count == 0) {
       return 0;
     }

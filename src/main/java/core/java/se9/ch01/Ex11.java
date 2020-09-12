@@ -12,9 +12,9 @@ public class Ex11 {
 
     System.out.println("codepoint     value");
     input
-      .codePoints()
-      .filter(x -> x > 127)
-      .distinct()
-      .forEach(x -> System.out.printf("    %s          %d\n", Character.toString(x), x));
+        .codePoints()
+        .filter(x -> x > 127)
+        .distinct()
+        .forEach(x -> System.out.printf("    %s          %d\n", Character.toString(x), x));
   }
 }

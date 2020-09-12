@@ -1,8 +1,8 @@
 package core.java.se9.ch02.ex05to08;
 
 /**
- * A <code>Point</code> object represents an immutable 2D point with
- * double valued coordinates.
+ * A <code>Point</code> object represents an immutable 2D point with double valued coordinates.
+ *
  * @author Darko Trifunovski
  * @version 1.0
  */
@@ -10,16 +10,16 @@ public class Point {
   private double x = 0.0;
   private double y = 0.0;
 
-  Point() {
-  }
+  Point() {}
 
   Point(double x, double y) {
     this.x = x;
     this.y = y;
   }
-  
+
   /**
    * Get the first coordinate.
+   *
    * @return the x-coordinate of the point
    */
   public double getX() {
@@ -28,6 +28,7 @@ public class Point {
 
   /**
    * Get the second coordinate.
+   *
    * @return the y-coordinate of the point
    */
   public double getY() {
@@ -36,6 +37,7 @@ public class Point {
 
   /**
    * Translate the point by (x, y).
+   *
    * @param x how much to translate the x-coordinate by
    * @param y how much to translate the y-coordinate by
    * @return the translated point
@@ -46,6 +48,7 @@ public class Point {
 
   /**
    * Scale the point by scaleFactor.
+   *
    * @param scaleFactor by how much to scale both coordinates
    * @return the scaled point
    */

@@ -3,7 +3,6 @@ package core.java.se9.ch03.ex06;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.math.BigInteger;
-
 import org.junit.jupiter.api.Test;
 
 public class SquareSequenceTest {

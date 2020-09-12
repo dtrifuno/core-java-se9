@@ -8,7 +8,8 @@
 
     // VSCode extensions to install when creating container.
 	"extensions": [
-        "vscjava.vscode-java-pack"
+        "vscjava.vscode-java-pack",
+        "richardwillis.vscode-spotless-gradle"
     ],
 
 	// Uncomment to run as a particular user instead of root.

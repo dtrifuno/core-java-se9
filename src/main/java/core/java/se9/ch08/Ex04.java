@@ -11,12 +11,9 @@ public class Ex04 {
 
   public static void main(String[] args) {
     System.out.println(
-      generateRandomStream(0, 25214903917L, 11, 2L << 47)
-      .limit(10)
-      .map(Object::toString)
-      .collect(Collectors.joining(" "))
-    );
-    
+        generateRandomStream(0, 25214903917L, 11, 2L << 47)
+            .limit(10)
+            .map(Object::toString)
+            .collect(Collectors.joining(" ")));
   }
-  
 }

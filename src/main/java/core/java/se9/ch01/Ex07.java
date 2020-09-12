@@ -28,13 +28,19 @@ public class Ex07 {
       break;
     }
 
-    System.out.printf("%s + %s = %s\n", Integer.toUnsignedString(x), Integer.toUnsignedString(y),
-        Integer.toUnsignedString(x + y));
-    System.out.printf("%s - %s = %s\n", Integer.toUnsignedString(x), Integer.toUnsignedString(y),
-        Integer.toUnsignedString(x - y));
-    System.out.printf("%s * %s = %s\n", Integer.toUnsignedString(x), Integer.toUnsignedString(y),
-        Integer.toUnsignedString(x * y));
-    System.out.printf("%s / %s = %s\n", Integer.toUnsignedString(x), Integer.toUnsignedString(y),
+    System.out.printf(
+        "%s + %s = %s\n",
+        Integer.toUnsignedString(x), Integer.toUnsignedString(y), Integer.toUnsignedString(x + y));
+    System.out.printf(
+        "%s - %s = %s\n",
+        Integer.toUnsignedString(x), Integer.toUnsignedString(y), Integer.toUnsignedString(x - y));
+    System.out.printf(
+        "%s * %s = %s\n",
+        Integer.toUnsignedString(x), Integer.toUnsignedString(y), Integer.toUnsignedString(x * y));
+    System.out.printf(
+        "%s / %s = %s\n",
+        Integer.toUnsignedString(x),
+        Integer.toUnsignedString(y),
         Integer.toUnsignedString(Integer.divideUnsigned(x, y)));
 
     in.close();

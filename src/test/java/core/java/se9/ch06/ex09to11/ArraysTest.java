@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
 import org.junit.jupiter.api.Test;
 
 public class ArraysTest {
@@ -24,9 +23,11 @@ public class ArraysTest {
 
   @Test
   void testFirstLastEmpty() {
-    assertThrows(IllegalArgumentException.class, () -> {
-      Arrays.firstLast(new ArrayList<>());
-    });
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> {
+          Arrays.firstLast(new ArrayList<>());
+        });
   }
 
   @Test
@@ -59,8 +60,10 @@ public class ArraysTest {
 
   @Test
   void testMinMaxEmpty() {
-    assertThrows(IllegalArgumentException.class, () -> {
-      Arrays.minMax(new ArrayList<>());
-    });
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> {
+          Arrays.minMax(new ArrayList<>());
+        });
   }
 }

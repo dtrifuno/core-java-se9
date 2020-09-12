@@ -11,10 +11,7 @@ import java.util.stream.Stream;
 
 public class Ex09 {
   static Set<Integer> stringToSet(String str) {
-    return str
-    .codePoints()
-    .mapToObj(Integer::valueOf)
-    .collect(Collectors.toSet());
+    return str.codePoints().mapToObj(Integer::valueOf).collect(Collectors.toSet());
   }
 
   public static void main(String[] args) {
@@ -24,9 +21,10 @@ public class Ex09 {
     var vowelsSet = stringToSet("aeiou");
 
     try (Stream<String> words = Files.lines(path, charset)) {
-      String[] result = words
-        .filter(word -> stringToSet(word.toLowerCase()).containsAll(vowelsSet))
-        .toArray(String[]::new);
+      String[] result =
+          words
+              .filter(word -> stringToSet(word.toLowerCase()).containsAll(vowelsSet))
+              .toArray(String[]::new);
       System.out.println(Arrays.toString(result));
     } catch (IOException e) {
       System.out.println(e.getMessage());

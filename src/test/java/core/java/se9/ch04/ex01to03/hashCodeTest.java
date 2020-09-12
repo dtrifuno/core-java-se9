@@ -1,7 +1,8 @@
 package core.java.se9.ch04.ex01to03;
 
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
 
 public class hashCodeTest {
   private final Point pointA = new Point(2.5, 3.5);
@@ -29,7 +30,8 @@ public class hashCodeTest {
 
   @Test
   void testLabeledPointsHaveDifferentHashesIfTheyDifferInX() {
-    assertNotEquals(new LabeledPoint("A", 4, 5).hashCode(), new LabeledPoint("A", 4.2, 5).hashCode());
+    assertNotEquals(
+        new LabeledPoint("A", 4, 5).hashCode(), new LabeledPoint("A", 4.2, 5).hashCode());
   }
 
   @Test

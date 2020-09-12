@@ -46,5 +46,4 @@ public class IntSequenceTest {
     assertEquals(4, seq.next());
     assertFalse(seq.hasNext());
   }
-  
 }

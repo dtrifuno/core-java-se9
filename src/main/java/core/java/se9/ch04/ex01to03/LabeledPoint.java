@@ -16,10 +16,18 @@ public class LabeledPoint extends Point {
 
   @Override
   public boolean equals(Object obj) {
-    if (obj == null) { return false; }
-    if (obj == this) { return true; }
-    if (!super.equals(obj)) { return false; }
-    if (this.getClass() != obj.getClass()) { return false; }
+    if (obj == null) {
+      return false;
+    }
+    if (obj == this) {
+      return true;
+    }
+    if (!super.equals(obj)) {
+      return false;
+    }
+    if (this.getClass() != obj.getClass()) {
+      return false;
+    }
     LabeledPoint labeledPointObject = (LabeledPoint) obj;
     return Objects.equals(this.label, labeledPointObject.label);
   }
@@ -33,5 +41,4 @@ public class LabeledPoint extends Point {
   public String toString() {
     return super.toString() + String.format("[label=\"%s\"]", this.label);
   }
-
 }

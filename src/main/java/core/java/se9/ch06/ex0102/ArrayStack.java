@@ -41,7 +41,7 @@ public class ArrayStack<T> implements Stack<T> {
     }
     return Optional.of(data[idx--]);
   }
-  
+
   @Override
   public boolean isEmpty() {
     return idx < 0;

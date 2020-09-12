@@ -1,25 +1,16 @@
 package core.java.se9.ch08;
 
-import java.util.stream.Stream;
-
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.stream.Stream;
+import org.junit.jupiter.api.Test;
 
 public class Ex10Test {
   @Test
   void testAverageStringLengthWithManyStrings() {
-    var actual = Ex10.averageStringLength(
-      Stream.of(
-        "carbon",
-        "proves",
-        "dressing",
-        "hospital",
-        "cable",
-        "kidney",
-        "bolt"
-      )
-    );
+    var actual =
+        Ex10.averageStringLength(
+            Stream.of("carbon", "proves", "dressing", "hospital", "cable", "kidney", "bolt"));
     double expected = 6.142857142857143;
     assertEquals(actual, expected);
   }

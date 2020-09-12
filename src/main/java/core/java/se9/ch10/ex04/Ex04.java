@@ -9,10 +9,10 @@ public class Ex04 {
       return BigInteger.ONE;
     }
 
-    ZMatrix[] array = new ZMatrix[n-1];
+    ZMatrix[] array = new ZMatrix[n - 1];
     Arrays.parallelSetAll(array, (i) -> new ZMatrix(1, 1, 1, 0));
     Arrays.parallelPrefix(array, ZMatrix::multiply);
-    return array[n-2].getUpperLeft();
+    return array[n - 2].getUpperLeft();
   }
 
   public static void main(String[] args) {

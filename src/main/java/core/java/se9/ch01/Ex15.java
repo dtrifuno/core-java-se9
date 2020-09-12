@@ -13,14 +13,14 @@ public class Ex15 {
     ArrayList<Integer> previousRow;
     ArrayList<Integer> currentRow = new ArrayList<Integer>(Arrays.asList(1));
     result.add(currentRow);
-    
+
     for (int i = 1; i <= n; i++) {
       previousRow = currentRow;
       currentRow = new ArrayList<Integer>();
 
       currentRow.add(1);
       for (int j = 1; j < i; j++) {
-        currentRow.add(previousRow.get(j-1) + previousRow.get(j));
+        currentRow.add(previousRow.get(j - 1) + previousRow.get(j));
       }
       currentRow.add(1);
       result.add(currentRow);

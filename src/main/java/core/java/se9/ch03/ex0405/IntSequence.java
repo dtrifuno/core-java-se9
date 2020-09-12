@@ -4,9 +4,10 @@ import java.util.function.IntSupplier;
 
 public interface IntSequence {
   boolean hasNext();
+
   int next();
 
-  static IntSequence of(int ... args) {
+  static IntSequence of(int... args) {
     return new IntSequence() {
       private int idx = 0;
       private int[] entries = args;
@@ -31,9 +32,9 @@ public interface IntSequence {
       }
 
       @Override
-        public boolean hasNext() {
-          return true;
-        }
+      public boolean hasNext() {
+        return true;
+      }
     };
   }
 }

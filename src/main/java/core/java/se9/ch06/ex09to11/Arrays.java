@@ -3,7 +3,7 @@ package core.java.se9.ch06.ex09to11;
 import java.util.ArrayList;
 import java.util.Optional;
 
-final public class Arrays {
+public final class Arrays {
   // Suppresses default constructor, ensuring non-instantiability.
   private Arrays() {
     throw new RuntimeException();
@@ -12,7 +12,7 @@ final public class Arrays {
   private static <E> void validateArrayList(ArrayList<E> a) {
     if (a == null || a.size() == 0) {
       throw new IllegalArgumentException("Method can only be called on a non-empty ArrayList.");
-    } 
+    }
   }
 
   public static <E> Pair<E> firstLast(ArrayList<? extends E> a) {

@@ -26,8 +26,8 @@ public class Ex02 {
 
       double speedUp = 100 * (sortTime / (double) parallelSortTime) - 100.0;
 
-      System.out.printf("%9d %10d %11d %16.2f\n", n, sortTime / 1000000, parallelSortTime / 1000000, speedUp);
+      System.out.printf(
+          "%9d %10d %11d %16.2f\n", n, sortTime / 1000000, parallelSortTime / 1000000, speedUp);
     }
   }
-  
 }

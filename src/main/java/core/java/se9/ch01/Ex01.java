@@ -4,8 +4,12 @@ import java.util.Scanner;
 
 public class Ex01 {
   static String createResultString(int n) {
-    return String.format("bin: %s\noct: %s\nhex: %s\ninv hex: %s", Integer.toString(n, 2), Integer.toString(n, 8),
-        Integer.toString(n, 16), Double.toHexString(1.0 / n));
+    return String.format(
+        "bin: %s\noct: %s\nhex: %s\ninv hex: %s",
+        Integer.toString(n, 2),
+        Integer.toString(n, 8),
+        Integer.toString(n, 16),
+        Double.toHexString(1.0 / n));
   }
 
   public static void main(String[] args) {

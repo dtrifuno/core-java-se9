@@ -7,7 +7,8 @@ public class Ex09 {
     b += "na";
     b += "na";
 
-    System.out.printf("The strings \"%s\" and \"%s\" are %s, ", a, b, a.equals(b) ? "equal" : "not equal");
+    System.out.printf(
+        "The strings \"%s\" and \"%s\" are %s, ", a, b, a.equals(b) ? "equal" : "not equal");
     System.out.printf("but \"%s\" %s \"%s\".\n", a, a == b ? "==" : "!=", b);
   }
 }

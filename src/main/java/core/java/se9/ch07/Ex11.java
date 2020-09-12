@@ -12,7 +12,7 @@ public class Ex11 {
     String sentence = in.nextLine();
 
     ArrayList<String> words = new ArrayList<>(List.of(sentence.split("\\PL+")));
-    Collections.shuffle(words.subList(1, words.size()-1));
+    Collections.shuffle(words.subList(1, words.size() - 1));
     System.out.println(String.join(" ", words));
     in.close();
   }

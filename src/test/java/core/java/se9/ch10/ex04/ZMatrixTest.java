@@ -3,14 +3,14 @@ package core.java.se9.ch10.ex04;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.math.BigInteger;
-
 import org.junit.jupiter.api.Test;
 
 public class ZMatrixTest {
   @Test
   void testEquals() {
     ZMatrix a = new ZMatrix(1, 2, 3, 4);
-    ZMatrix alsoA = new ZMatrix(BigInteger.ONE, BigInteger.TWO, BigInteger.valueOf(3), BigInteger.valueOf(4));
+    ZMatrix alsoA =
+        new ZMatrix(BigInteger.ONE, BigInteger.TWO, BigInteger.valueOf(3), BigInteger.valueOf(4));
     assertTrue(a.equals(alsoA));
   }
 

@@ -11,10 +11,8 @@ public class Ex16 {
       double t = sum + y;
       c = (t - sum) - y;
       sum = t;
-
     }
 
     return sum / (rest.length + 1.0);
   }
-  
 }

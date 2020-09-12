@@ -1,10 +1,9 @@
 package core.java.se9.ch06.ex0102;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Optional;
+import org.junit.jupiter.api.Test;
 
 public abstract class StackTest<T extends Stack<String>> {
   protected abstract T createInstance();
@@ -26,5 +25,5 @@ public abstract class StackTest<T extends Stack<String>> {
     assertEquals(Optional.of("a"), stack.pop());
     assertEquals(Optional.empty(), stack.pop());
     assertTrue(stack.isEmpty());
-   }
+  }
 }

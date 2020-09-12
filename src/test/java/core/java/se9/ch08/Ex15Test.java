@@ -1,10 +1,9 @@
 package core.java.se9.ch08;
 
-import java.util.stream.Stream;
-
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.stream.Stream;
+import org.junit.jupiter.api.Test;
 
 public class Ex15Test {
   @Test

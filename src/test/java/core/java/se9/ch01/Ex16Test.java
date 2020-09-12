@@ -1,10 +1,11 @@
 package core.java.se9.ch01;
 
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
 public class Ex16Test {
-  private static final double DELTA=0.0000000001;
+  private static final double DELTA = 0.0000000001;
 
   @Test
   void testAverageWithASingleEntry() {
